@@ -14,13 +14,14 @@
     <div class="main-cont">
         <button id="btn" onclick="start()" class="btn well" style="width: 10em; margin: 0px; height: 3em; display: flex; align-items: center; justify-content: center; border-radius: 8px;">Start</button>
         <input type="number" style="display: none; width: 10em; border-radius: 8px; border: none; text-align: center; padding: 0px; margin: 0px; height: 3em;" id="txt-box" placeholder="Guess Fast!" class="well"></input>
-        <button id="submit" class="well" style="display: none; width: 10em; border-radius: 8px; border: none; text-align: center; padding: 0px; margin: 0px; height: 3em;">Submit</button>
-        <div id="num-box" class="well">
-            <p id="num-org" style="max-width: 10em; text-align: center;">CLICK ME TO REVEAL NUMBER</p>
+        <button id="submit" class="well" onclick="afterMath()" style="display: none; width: 10em; border-radius: 8px; border: none; text-align: center; padding: 0px; margin: 0px; height: 3em;">Submit</button>
+        <div class="well" id="errorBox" style="width: 10em; border-radius: 8px; margin: 0px; text-align: center;">
+            <p id="errorMsg" class="errMsg" style="text-align: center;">Hello!</p>
         </div>
-        <div class="well" id="errorBox" style="width: 10em; border-radius: 8px;">
-            <p id="errorMsg" class="errMsg">Hello!</p>
-        </div>
+        <button id="num-box" class="well" onclick="numberRev()">
+            <p id="num-org" style="max-width: 10em; text-align: center; margin: 0px;">CLICK ME TO REVEAL NUMBER</p>
+        </button>
+        <button id="restart" class="well" onclick="window.location.reload()" style="display: none; width: 10em; border-radius: 8px; border: none; text-align: center; padding: 0px; margin: 0px; height: 3em;"Text Here></button>
     </div>
     <script src="guess.js"></script>
     <script src="guesstwo.js"></script>
