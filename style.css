@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0px;
+    padding: 0px;
 }
 .errMsg{
     max-width: 10em;
