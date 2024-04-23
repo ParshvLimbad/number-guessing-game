@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Guess The Number</title>
+</head>
+
+<body>
+    <div class="main-cont">
+        <button id="btn" onclick="start()" class="btn well" style="width: 10em; margin: 0px; height: 3em; display: flex; align-items: center; justify-content: center; border-radius: 8px;">Start</button>
+        <input type="number" style="display: none; width: 10em; border-radius: 8px; border: none; text-align: center; padding: 0px; margin: 0px; height: 3em;" id="txt-box" placeholder="Guess Fast!" class="well"></input>
+        <button id="submit" class="well" style="display: none; width: 10em; border-radius: 8px; border: none; text-align: center; padding: 0px; margin: 0px; height: 3em;">Submit</button>
+        <div id="num-box" class="well">
+            <p id="num-org" style="max-width: 10em; text-align: center;">CLICK ME TO REVEAL NUMBER</p>
+        </div>
+        <div class="well" id="errorBox" style="width: 10em; border-radius: 8px;">
+            <p id="errorMsg" class="errMsg">Hello!</p>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+    <script src="guesstwo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#num-box {
+    width: 10em;
+    height: 10em;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.errMsg{
+    max-width: 10em;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+.main-cont{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    scale: 140%;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
