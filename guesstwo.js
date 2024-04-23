@@ -10,20 +10,33 @@ userInput = document.getElementById("txt-box")
 let submit = document.getElementById("submit")
 let numberReveal = document.getElementById("num-box").style.display = "none"
 let errorBox = document.getElementById("errorBox").style.display = "none"
+let restart = document.getElementById("restart").style.display = "none"
 let generateNum;
 
 function start() {
     generateNum = Math.floor(Math.random() * 10) + 1;
     console.log(generateNum);
     btn.onclick = userInput.style.display = "block"
-    userInput = userInput.value
     btn.onclick = submit.style.display = "block"
     btn.onclick = btn.style.display = "none"
 }
 function afterMath(){
-    if(userInput.value !== generateNum){
-       console.log("Incorrect")
-    } else if (userInput.value == generateNum) {
-       console.log("Correct")
+    let userInputValue = parseInt(userInput.value);
+    if(userInputValue !== generateNum){
+       errorBox = document.getElementById("errorBox").innerText = "Incorrect"
+       errorBox = document.getElementById("errorBox").style.display = "block"
+       numberReveal = document.getElementById("num-box").style.display = "flex"
+       restart = document.getElementById("restart").style.display = "block"
+       restart = document.getElementById("restart").innerText = "Try Again"
+       submit.style.display = "none"
+    } else {
+       errorBox = document.getElementById("errorBox").innerText = "Correct"
+       errorBox = document.getElementById("errorBox").style.display = "block"
+       restart = document.getElementById("restart").style.display = "block"
+       restart = document.getElementById("restart").innerText = "Play Again?"
+       submit.style.display = "none"
     }
+}
+function numberRev(){
+    numberReveal = document.getElementById("num-box").innerText = generateNum
 }
